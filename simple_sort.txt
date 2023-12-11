@@ -1,0 +1,22 @@
+Initialization:
+
+The function cards_sort takes an array of integers named cards as a parameter.
+It declares local variables temp to temporarily hold values during swapping and swapped as a boolean flag to track whether any swaps occurred in a pass through the array.
+Input:
+
+The function reads the array of integers cards from an input source (assumed to be a console input) using the Read function.
+Bubble Sort:
+
+The code uses the Bubble Sort algorithm with a WHILE loop.
+The outer loop (WHILE swapped) continues until no swaps are made in a pass through the array, indicating that the array is sorted.
+The inner loop (FOR i FROM 0 TO len-1) iterates through the array, comparing adjacent elements and swapping them if they are in the wrong order.
+Swapping:
+
+If the condition cards[i] > cards[i+1] is true, the elements are swapped using a temporary variable temp.
+Flag Update:
+
+The swapped flag is set to true inside the inner loop if any swaps are made.
+Return:
+
+The sorted array cards is returned.
+Note: The pseudocode seems to have a small typo where cards [i+1] = tempgit add . appears to be a mistake. It should be cards[i+1] = temp without the extra "git add ." part.
