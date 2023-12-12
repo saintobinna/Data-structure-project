@@ -1,0 +1,112 @@
+FUNCTION is_distinct_element(element, otherArray) : BOOLEAN
+
+BEGIN
+    FOR i FROM 0 TO otherArray.length-1 STEP 1 DO
+        IF (element===otherArray[i]) THEN
+            RETURN false
+        END_IF
+    END_FOR
+    RETURN true ;
+END
+
+
+ALGORITHM sum_up_distinct_elements
+
+VAR
+    sum: INTEGER:=0
+    s1,s2: INTEGER
+    set1 : ARRAY_OF INTEGER[s1];
+    set2: ARRAY_OF INTEGER[s2]
+    j,k: INTEGER:=0 
+
+BEGIN
+    Read(set1)
+    Read(set2)
+
+    FOR j FROM 0 TO s1-1 STEP 1  DO
+        IF (is_distinct_element(set1[j], set2)) THEN 
+        sum= sum+set1[j]
+        END_IF
+    END_FOR
+
+    FOR k FROM 0 TO s2-1 STEP 1  DO
+        IF (is_distinct_element(set2[k], set1)) THEN 
+        sum= sum+set2[k]
+        END_IF
+    END_FOR
+
+ENDFUNCTION is_distinct_element(element, otherArray) : BOOLEAN
+
+BEGIN
+    FOR i FROM 0 TO otherArray.length-1 STEP 1 DO
+        IF (element===otherArray[i]) THEN
+            RETURN false
+        END_IF
+    END_FOR
+    RETURN true ;
+END
+
+
+ALGORITHM sum_up_distinct_elements
+
+VAR
+    sum: INTEGER:=0
+    s1,s2: INTEGER
+    set1 : ARRAY_OF INTEGER[s1];
+    set2: ARRAY_OF INTEGER[s2]
+    j,k: INTEGER:=0 
+
+BEGIN
+    Read(set1)
+    Read(set2)
+
+    FOR j FROM 0 TO s1-1 STEP 1  DO
+        IF (is_distinct_element(set1[j], set2)) THEN 
+        sum= sum+set1[j]
+        END_IF
+    END_FOR
+
+    FOR k FROM 0 TO s2-1 STEP 1  DO
+        IF (is_distinct_element(set2[k], set1)) THEN 
+        sum= sum+set2[k]
+        END_IF
+    END_FOR
+
+ENDFUNCTION is_distinct_element(element, otherArray) : BOOLEAN
+
+BEGIN
+    FOR i FROM 0 TO otherArray.length-1 STEP 1 DO
+        IF (element===otherArray[i]) THEN
+            RETURN false
+        END_IF
+    END_FOR
+    RETURN true ;
+END
+
+
+ALGORITHM sum_up_distinct_elements
+
+VAR
+    sum: INTEGER:=0
+    s1,s2: INTEGER
+    set1 : ARRAY_OF INTEGER[s1];
+    set2: ARRAY_OF INTEGER[s2]
+    j,k: INTEGER:=0 
+
+BEGIN
+    Read(set1)
+    Read(set2)
+
+    FOR j FROM 0 TO s1-1 STEP 1  DO
+        IF (is_distinct_element(set1[j], set2)) THEN 
+        sum= sum+set1[j]
+        END_IF
+    END_FOR
+
+    FOR k FROM 0 TO s2-1 STEP 1  DO
+        IF (is_distinct_element(set2[k], set1)) THEN 
+        sum= sum+set2[k]
+        END_IF
+    END_FOR
+
+END
