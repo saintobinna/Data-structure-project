@@ -1,0 +1,9 @@
+Function Signature: The function is named isPalindrome and takes three parameters - word (the input word to check), start (the starting index for comparison), and end (the ending index for comparison).
+
+Default Values: The starting index start is initialized with 0, and the ending index end is initialized with word.length - 1. This allows the function to be called without specifying these values explicitly.
+
+Base Case Check: The function begins with a conditional check IF (start >= end) THEN to determine if the indices have crossed each other. If true, it means that the entire word has been checked, and the function returns true, indicating that the word is a palindrome.
+
+Recursive Check: If the base case is not met, the function checks if the characters at the current start and end indices are equal (word[start] === word[end]). If they are, the function makes a recursive call to itself with the updated indices (start + 1 and end - 1).
+
+Mismatch Handling: If the characters at the current indices are not equal, the function returns false, indicating that the word is not a palindrome.
